@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic card generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1>Card Generator</h1>
+        <hr>
+        <form>
+            <div>
+                <div>
+                    <label for="SN">Enter S.N for card:</label><br>
+                    <input type="number" name="SM-ME" id="SN" placeholder="S.N here" required>
+                </div>
+                <div>
+                    <label for="image-url">Enter Image URL:</label><br>
+                    <input type="url" name="URL" id="image-url" placeholder="Image URL here" required>
+                </div>
+                <div>
+                    <label for="channel">Enter the channel name of card:</label><br>
+                    <input type="text" name="channel-me" id="channel" placeholder="channel here" required>
+                </div>
+                <div>
+                    <label for="intro">Enter the title of card:</label><br>
+                    <input type="text" name="intro-me" id="intro" placeholder="title here" required>
+                </div>
+                <div>
+                    <label for="view">Enter the number of views:</label><br>
+                    <input type="text" name="view-me" id="view" placeholder="number of views" required>
+                </div>
+                <div class="div">
+                    <label for="uploaded-date">Enter the uploaded date:</label><br>
+                    <input type="text" name="uploaded" id="uploaded-date" placeholder="uploaded-date here" required>
+                </div>
+            </div>
+            <div class="button">
+                <button id="generate-button">Generate</button>
+            </div>
+        </form>
+        <div class="card">
+            <div id="sn">1</div>
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/CYwEq1GdU4E/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDvcK2UMoFiPyb7mW9DuHiErVTnNg"
+                    alt="image">
+            </div>
+            <div class="intro">
+                Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1
+                <div class="title">
+                    <span class="channel">codewithAdarsh</span>
+                    <span class="view">2000m <span>views</span></span>
+                    <span class="uploaded">2 <span>months ago</span></span>
+                </div>
+            </div>
+            <div class="dots">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 512" width="20px"
+                    height="20px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                        d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
